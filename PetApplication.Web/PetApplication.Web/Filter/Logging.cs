@@ -1,8 +1,8 @@
-﻿using PetApplication.Utility;
+﻿using PetWithOwnerApplication.Utility;
 using System.Web;
 using System.Web.Mvc;
 
-namespace PetApplication.Web
+namespace PetWithOwnerApplication.Web
 {
     public class AppErrorHandler : HandleErrorAttribute
     {

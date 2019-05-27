@@ -1,4 +1,4 @@
-﻿namespace PetApplication.Utility
+﻿namespace PetWithOwnerApplication.Utility
 {
     public class Constant
     {

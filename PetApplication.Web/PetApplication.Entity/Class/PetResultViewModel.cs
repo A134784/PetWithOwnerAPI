@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PetApplication.Entity
+namespace PetWithOwnerApplication.Entity
 {
     public class PetResultViewModel 
     {

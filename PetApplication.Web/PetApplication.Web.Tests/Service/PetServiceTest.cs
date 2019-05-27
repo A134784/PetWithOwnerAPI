@@ -2,10 +2,10 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PetApplication.Service;
-using PetApplication.Entity;
+using PetWithOwnerApplication.Service;
+using PetWithOwnerApplication.Entity;
 
-namespace PetApplication.Web.Tests.Service
+namespace PetWithOwnerApplication.Web.Tests.Service
 {
     /// <summary>
     /// Summary description for PetServiceTest
@@ -65,7 +65,7 @@ namespace PetApplication.Web.Tests.Service
         [TestInitialize]
         public void TestInit()
         {
-            _GetPetServiceData = new PetApplication.Service.Class.GetPetServiceData();
+            _GetPetServiceData = new PetWithOwnerApplication.Service.Class.GetPetServiceData();
         }
 
         [TestMethod]

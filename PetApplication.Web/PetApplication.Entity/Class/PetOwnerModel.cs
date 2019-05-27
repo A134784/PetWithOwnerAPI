@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace PetApplication.Entity
+namespace PetWithOwnerApplication.Entity
 {
     public class PetOwnerModel 
     {

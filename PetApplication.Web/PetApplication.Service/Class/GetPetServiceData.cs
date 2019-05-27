@@ -1,4 +1,4 @@
-﻿namespace PetApplication.Service.Class
+﻿namespace PetWithOwnerApplication.Service.Class
 {
     using System;
     using System.Collections.Generic;

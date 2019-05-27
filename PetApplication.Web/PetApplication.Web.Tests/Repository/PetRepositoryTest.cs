@@ -1,13 +1,13 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using PetApplication.Entity;
-using PetApplication.Repository;
+using PetWithOwnerApplication.Entity;
+using PetWithOwnerApplication.Repository;
 using Moq;
-using PetApplication.Service;
+using PetWithOwnerApplication.Service;
 using System.Linq;
-using PetApplication.Utility;
+using PetWithOwnerApplication.Utility;
 
-namespace PetApplication.Web.Tests.Repository
+namespace PetWithOwnerApplication.Web.Tests.Repository
 {
     [TestClass]
     public class PetRepositoryTest
@@ -95,7 +95,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
             //Act
             var result = petRepository.GetPetNamesAccordingToGender();
             //Assert
@@ -108,7 +108,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
             //Assert
@@ -121,7 +121,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
             //Assert
@@ -133,7 +133,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
             //Assert
@@ -146,7 +146,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
             //Assert
@@ -159,7 +159,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
             //Assert
@@ -175,7 +175,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
 
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
@@ -192,7 +192,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerSingleGenderNull());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
 
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
@@ -209,7 +209,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerSingleNullPetArrayResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
 
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
@@ -226,7 +226,7 @@ namespace PetApplication.Web.Tests.Repository
             //Arrange
             var mock = new Mock<IGetPetServiceData>();
             mock.Setup(p => p.GetPetDataFromService()).Returns(GetMockPetOwnerBothNullPetArrayResult());
-            PetApplication.Repository.Class.PetRepository petRepository = new PetApplication.Repository.Class.PetRepository(mock.Object);
+            PetWithOwnerApplication.Repository.Class.PetRepository petRepository = new PetWithOwnerApplication.Repository.Class.PetRepository(mock.Object);
             //Act
             var result = petRepository.GetPetNamesAccordingToGender() as List<PetResultViewModel>;
             var petNamesMaleGroupJsonData = result.Where(m => m.Gender == Constant.MaleKey).SelectMany(m => m.PetNames);

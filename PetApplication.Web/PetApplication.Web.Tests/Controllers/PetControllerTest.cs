@@ -1,11 +1,11 @@
-﻿namespace PetApplication.Web.Tests.Controllers
+﻿namespace PetWithOwnerApplication.Web.Tests.Controllers
 {
     using System.Collections.Generic;
     using System.Web.Mvc;
     using Entity;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using PetApplication.Repository;
+    using PetWithOwnerApplication.Repository;
     using Web.Controllers;
 
     [TestClass]

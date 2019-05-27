@@ -1,7 +1,7 @@
-﻿using PetApplication.Entity;
+﻿using PetWithOwnerApplication.Entity;
 using System.Collections.Generic;
 
-namespace PetApplication.Repository
+namespace PetWithOwnerApplication.Repository
 {
     public interface IPetRepository
     {

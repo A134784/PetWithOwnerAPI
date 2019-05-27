@@ -1,8 +1,8 @@
-﻿using PetApplication.Repository;
-using PetApplication.Utility;
+﻿using PetWithOwnerApplication.Repository;
+using PetWithOwnerApplication.Utility;
 using System.Web.Mvc;
 
-namespace PetApplication.Web.Controllers
+namespace PetWithOwnerApplication.Web.Controllers
 {
     [Audit]
     public class BaseController : Controller

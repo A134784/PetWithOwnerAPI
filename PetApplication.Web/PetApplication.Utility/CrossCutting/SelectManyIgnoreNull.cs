@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PetApplication.Utility
+namespace PetWithOwnerApplication.Utility
 {
     public static class SelectManyIgnoreNull
     {

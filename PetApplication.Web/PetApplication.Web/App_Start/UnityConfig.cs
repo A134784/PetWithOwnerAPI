@@ -1,10 +1,10 @@
-using PetApplication.Repository;
-using PetApplication.Service;
+using PetWithOwnerApplication.Repository;
+using PetWithOwnerApplication.Service;
 using System;
 
 using Unity;
 
-namespace PetApplication.Web
+namespace PetWithOwnerApplication.Web
 {
     /// <summary>
     /// Specifies the Unity configuration for the main container.
@@ -45,8 +45,8 @@ namespace PetApplication.Web
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
 
-            container.RegisterType<IPetRepository, PetApplication.Repository.Class.PetRepository>();
-            container.RegisterType<IGetPetServiceData, PetApplication.Service.Class.GetPetServiceData>();
+            container.RegisterType<IPetRepository, PetWithOwnerApplication.Repository.Class.PetRepository>();
+            container.RegisterType<IGetPetServiceData, PetWithOwnerApplication.Service.Class.GetPetServiceData>();
         }
     }
 }

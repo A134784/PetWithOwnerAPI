@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace PetApplication.Web
+namespace PetWithOwnerApplication.Web
 {
     public class BundleConfig
     {
