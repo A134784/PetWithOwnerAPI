@@ -1,8 +1,8 @@
-﻿using NLog;
-using System;
-
+﻿
 namespace PetWithOwnerApplication.Utility
 {
+    using NLog;
+    using System;
     public class Log
     {
         //Loggin to Nlog

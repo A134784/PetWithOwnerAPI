@@ -1,7 +1,7 @@
-﻿using System;
-
+﻿
 namespace PetWithOwnerApplication.Utility
 {
+    using System;
     public class Audit
     {
         public Guid AuditID { get; set; }

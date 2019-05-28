@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
-
+﻿
 namespace PetWithOwnerApplication.Entity
 {
+    using System.Collections.Generic;
+
     public class PetResultViewModel 
     {
         public string Gender { get; set; }

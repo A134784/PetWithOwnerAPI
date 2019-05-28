@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
-
+﻿
 namespace PetWithOwnerApplication.Entity
 {
+    using Newtonsoft.Json;
+    using System.Collections.Generic;
     public class PetOwnerModel 
     {
         [JsonProperty("name")]

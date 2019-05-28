@@ -1,11 +1,10 @@
-using PetWithOwnerApplication.Repository;
-using PetWithOwnerApplication.Service;
-using System;
-
-using Unity;
 
 namespace PetWithOwnerApplication.Web
 {
+    using PetWithOwnerApplication.Repository;
+    using PetWithOwnerApplication.Service;
+    using System;
+    using Unity;
     /// <summary>
     /// Specifies the Unity configuration for the main container.
     /// </summary>

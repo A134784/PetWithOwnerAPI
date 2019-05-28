@@ -1,13 +1,14 @@
-using System.Linq;
-using System.Web.Mvc;
 
-using Unity.AspNet.Mvc;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(PetWithOwnerApplication.Web.UnityMvcActivator), nameof(PetWithOwnerApplication.Web.UnityMvcActivator.Start))]
 [assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(PetWithOwnerApplication.Web.UnityMvcActivator), nameof(PetWithOwnerApplication.Web.UnityMvcActivator.Shutdown))]
 
 namespace PetWithOwnerApplication.Web
 {
+    using System.Linq;
+    using System.Web.Mvc;
+
+    using Unity.AspNet.Mvc;
     /// <summary>
     /// Provides the bootstrapping for integrating Unity with ASP.NET MVC.
     /// </summary>

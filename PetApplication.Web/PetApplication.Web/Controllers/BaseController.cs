@@ -1,9 +1,9 @@
-﻿using PetWithOwnerApplication.Repository;
-using PetWithOwnerApplication.Utility;
-using System.Web.Mvc;
-
+﻿
 namespace PetWithOwnerApplication.Web.Controllers
 {
+    using PetWithOwnerApplication.Repository;
+    using PetWithOwnerApplication.Utility;
+    using System.Web.Mvc;
     [Audit]
     public class BaseController : Controller
     {

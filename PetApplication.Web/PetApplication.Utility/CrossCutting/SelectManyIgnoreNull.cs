@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 namespace PetWithOwnerApplication.Utility
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
     public static class SelectManyIgnoreNull
     {
 
